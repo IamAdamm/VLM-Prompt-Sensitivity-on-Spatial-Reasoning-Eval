@@ -6,10 +6,6 @@ __pycache__/
 dist/
 build/
 
-# Ignore JSON/JSONL logs
-*.json
-*.jsonl
-
 # Jupyter / Notebook checkpoints
 .ipynb_checkpoints/
 
@@ -17,36 +13,20 @@ build/
 *.log
 controller.log.*
 gradio_web_server.log.*
-wandb/
-output/
 
-# Model weights / checkpoints
-checkpoints/
-ckpts*/
+# Wandb logs (keep for experiment history for now)
+# wandb/
+
+# Model weights (stored separately)
 *.pt
 *.ckpt
 *.h5
 *.onnx
 
-# Playground data (keep prompts, ignore everything else)
-playground/data/
-!playground/data/prompts/
-!playground/data/prompts/**/*
-!playground/data/coco2014_val_gpt4_qa_30x3.jsonl
-
-# Serve images / demos
-serve_images/
-
-# LLaVA package / virtual env / editor
+# Virtual env / editor
 .venv/
+venv/
 env/
 .idea/
 *.swp
 .DS_Store
-llava.egg-info/
-
-# DevContainer (keep tracked)
-!.devcontainer/*
-
-# Small data file you want to include
-!**/alpaca-data-conversation.json

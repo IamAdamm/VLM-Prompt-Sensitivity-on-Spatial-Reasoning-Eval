@@ -1,0 +1,3358 @@
+[
+  {
+    "image": [
+      "apple_left_of_armchair.jpeg",
+      "apple_right_of_armchair.jpeg",
+      "apple_on_armchair.jpeg",
+      "apple_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "apple_left_of_armchair.jpeg": "Left",
+      "apple_right_of_armchair.jpeg": "Right",
+      "apple_on_armchair.jpeg": "On top",
+      "apple_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the apple relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the apple relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the apple and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the apple and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "ball-of-yarn_left_of_chair.jpeg",
+      "ball-of-yarn_right_of_chair.jpeg",
+      "ball-of-yarn_on_chair.jpeg",
+      "ball-of-yarn_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "ball-of-yarn_left_of_chair.jpeg": "Left",
+      "ball-of-yarn_right_of_chair.jpeg": "Right",
+      "ball-of-yarn_on_chair.jpeg": "On top",
+      "ball-of-yarn_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the ball of yarn relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the ball of yarn relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the ball of yarn and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the ball of yarn and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "ball-of-yarn_left_of_table.jpeg",
+      "ball-of-yarn_right_of_table.jpeg",
+      "ball-of-yarn_on_table.jpeg",
+      "ball-of-yarn_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "ball-of-yarn_left_of_table.jpeg": "Left",
+      "ball-of-yarn_right_of_table.jpeg": "Right",
+      "ball-of-yarn_on_table.jpeg": "On top",
+      "ball-of-yarn_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the ball of yarn relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the ball of yarn relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the ball of yarn and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the ball of yarn and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "banana_left_of_chair.jpeg",
+      "banana_right_of_chair.jpeg",
+      "banana_on_chair.jpeg",
+      "banana_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "banana_left_of_chair.jpeg": "Left",
+      "banana_right_of_chair.jpeg": "Right",
+      "banana_on_chair.jpeg": "On top",
+      "banana_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the banana relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the banana relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the banana and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the banana and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "banana_left_of_table.jpeg",
+      "banana_right_of_table.jpeg",
+      "banana_on_table.jpeg",
+      "banana_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "banana_left_of_table.jpeg": "Left",
+      "banana_right_of_table.jpeg": "Right",
+      "banana_on_table.jpeg": "On top",
+      "banana_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the banana relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the banana relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the banana and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the banana and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "banjo_left_of_armchair.jpeg",
+      "banjo_right_of_armchair.jpeg",
+      "banjo_on_armchair.jpeg",
+      "banjo_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "banjo_left_of_armchair.jpeg": "Left",
+      "banjo_right_of_armchair.jpeg": "Right",
+      "banjo_on_armchair.jpeg": "On top",
+      "banjo_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the banjo relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the banjo relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the banjo and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the banjo and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "beer-bottle_left_of_armchair.jpeg",
+      "beer-bottle_right_of_armchair.jpeg",
+      "beer-bottle_on_armchair.jpeg",
+      "beer-bottle_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "beer-bottle_left_of_armchair.jpeg": "Left",
+      "beer-bottle_right_of_armchair.jpeg": "Right",
+      "beer-bottle_on_armchair.jpeg": "On top",
+      "beer-bottle_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the beer bottle relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the beer bottle relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the beer bottle and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the beer bottle and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "beer-bottle_left_of_chair.jpeg",
+      "beer-bottle_right_of_chair.jpeg",
+      "beer-bottle_on_chair.jpeg",
+      "beer-bottle_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "beer-bottle_left_of_chair.jpeg": "Left",
+      "beer-bottle_right_of_chair.jpeg": "Right",
+      "beer-bottle_on_chair.jpeg": "On top",
+      "beer-bottle_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the beer bottle relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the beer bottle relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the beer bottle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the beer bottle and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "blanket_left_of_chair.jpeg",
+      "blanket_right_of_chair.jpeg",
+      "blanket_on_chair.jpeg",
+      "blanket_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "blanket_left_of_chair.jpeg": "Left",
+      "blanket_right_of_chair.jpeg": "Right",
+      "blanket_on_chair.jpeg": "On top",
+      "blanket_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the blanket relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the blanket relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the blanket and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the blanket and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "book_left_of_chair.jpeg",
+      "book_right_of_chair.jpeg",
+      "book_on_chair.jpeg",
+      "book_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "book_left_of_chair.jpeg": "Left",
+      "book_right_of_chair.jpeg": "Right",
+      "book_on_chair.jpeg": "On top",
+      "book_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the book relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the book relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the book and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the book and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "book_left_of_table.jpeg",
+      "book_right_of_table.jpeg",
+      "book_on_table.jpeg",
+      "book_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "book_left_of_table.jpeg": "Left",
+      "book_right_of_table.jpeg": "Right",
+      "book_on_table.jpeg": "On top",
+      "book_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the book relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the book relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the book and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the book and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "book_left_of_armchair.jpeg",
+      "book_right_of_armchair.jpeg",
+      "book_on_armchair.jpeg",
+      "book_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "book_left_of_armchair.jpeg": "Left",
+      "book_right_of_armchair.jpeg": "Right",
+      "book_on_armchair.jpeg": "On top",
+      "book_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the book relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the book relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the book and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the book and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bottle_left_of_chair.jpeg",
+      "bottle_right_of_chair.jpeg",
+      "bottle_on_chair.jpeg",
+      "bottle_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "bottle_left_of_chair.jpeg": "Left",
+      "bottle_right_of_chair.jpeg": "Right",
+      "bottle_on_chair.jpeg": "On top",
+      "bottle_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bottle relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bottle relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bottle and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bottle_left_of_table.jpeg",
+      "bottle_right_of_table.jpeg",
+      "bottle_on_table.jpeg",
+      "bottle_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "bottle_left_of_table.jpeg": "Left",
+      "bottle_right_of_table.jpeg": "Right",
+      "bottle_on_table.jpeg": "On top",
+      "bottle_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bottle relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bottle relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bottle and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bottle_left_of_armchair.jpeg",
+      "bottle_right_of_armchair.jpeg",
+      "bottle_on_armchair.jpeg",
+      "bottle_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "bottle_left_of_armchair.jpeg": "Left",
+      "bottle_right_of_armchair.jpeg": "Right",
+      "bottle_on_armchair.jpeg": "On top",
+      "bottle_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bottle relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bottle relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bottle and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bowl_left_of_chair.jpeg",
+      "bowl_right_of_chair.jpeg",
+      "bowl_on_chair.jpeg",
+      "bowl_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "bowl_left_of_chair.jpeg": "Left",
+      "bowl_right_of_chair.jpeg": "Right",
+      "bowl_on_chair.jpeg": "On top",
+      "bowl_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bowl relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bowl relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bowl and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bowl and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bowl_left_of_table.jpeg",
+      "bowl_right_of_table.jpeg",
+      "bowl_on_table.jpeg",
+      "bowl_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "bowl_left_of_table.jpeg": "Left",
+      "bowl_right_of_table.jpeg": "Right",
+      "bowl_on_table.jpeg": "On top",
+      "bowl_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bowl relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bowl relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bowl and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bowl and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bowl_left_of_armchair.jpeg",
+      "bowl_right_of_armchair.jpeg",
+      "bowl_on_armchair.jpeg",
+      "bowl_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "bowl_left_of_armchair.jpeg": "Left",
+      "bowl_right_of_armchair.jpeg": "Right",
+      "bowl_on_armchair.jpeg": "On top",
+      "bowl_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bowl relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bowl relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bowl and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bowl and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "cap_left_of_chair.jpeg",
+      "cap_right_of_chair.jpeg",
+      "cap_on_chair.jpeg",
+      "cap_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "cap_left_of_chair.jpeg": "Left",
+      "cap_right_of_chair.jpeg": "Right",
+      "cap_on_chair.jpeg": "On top",
+      "cap_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the cap relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the cap relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cap and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the cap and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "cap_left_of_table.jpeg",
+      "cap_right_of_table.jpeg",
+      "cap_on_table.jpeg",
+      "cap_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "cap_left_of_table.jpeg": "Left",
+      "cap_right_of_table.jpeg": "Right",
+      "cap_on_table.jpeg": "On top",
+      "cap_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the cap relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the cap relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cap and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the cap and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "cap_left_of_armchair.jpeg",
+      "cap_right_of_armchair.jpeg",
+      "cap_on_armchair.jpeg",
+      "cap_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "cap_left_of_armchair.jpeg": "Left",
+      "cap_right_of_armchair.jpeg": "Right",
+      "cap_on_armchair.jpeg": "On top",
+      "cap_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the cap relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the cap relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cap and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the cap and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "wineglass_left_of_chair.jpeg",
+      "wineglass_right_of_chair.jpeg",
+      "wineglass_on_chair.jpeg",
+      "wineglass_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "wineglass_left_of_chair.jpeg": "Left",
+      "wineglass_right_of_chair.jpeg": "Right",
+      "wineglass_on_chair.jpeg": "On top",
+      "wineglass_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the wineglass relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the wineglass relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the wineglass and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the wineglass and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "wineglass_left_of_table.jpeg",
+      "wineglass_right_of_table.jpeg",
+      "wineglass_on_table.jpeg",
+      "wineglass_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "wineglass_left_of_table.jpeg": "Left",
+      "wineglass_right_of_table.jpeg": "Right",
+      "wineglass_on_table.jpeg": "On top",
+      "wineglass_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the wineglass relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the wineglass relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the wineglass and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the wineglass and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "wineglass_left_of_armchair.jpeg",
+      "wineglass_right_of_armchair.jpeg",
+      "wineglass_on_armchair.jpeg",
+      "wineglass_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "wineglass_left_of_armchair.jpeg": "Left",
+      "wineglass_right_of_armchair.jpeg": "Right",
+      "wineglass_on_armchair.jpeg": "On top",
+      "wineglass_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the wineglass relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the wineglass relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the wineglass and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the wineglass and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "sunglasses_left_of_chair.jpeg",
+      "sunglasses_right_of_chair.jpeg",
+      "sunglasses_on_chair.jpeg",
+      "sunglasses_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "sunglasses_left_of_chair.jpeg": "Left",
+      "sunglasses_right_of_chair.jpeg": "Right",
+      "sunglasses_on_chair.jpeg": "On top",
+      "sunglasses_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the sunglasses relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the sunglasses relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the sunglasses and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the sunglasses and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "sunglasses_left_of_table.jpeg",
+      "sunglasses_right_of_table.jpeg",
+      "sunglasses_on_table.jpeg",
+      "sunglasses_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "sunglasses_left_of_table.jpeg": "Left",
+      "sunglasses_right_of_table.jpeg": "Right",
+      "sunglasses_on_table.jpeg": "On top",
+      "sunglasses_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the sunglasses relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the sunglasses relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the sunglasses and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the sunglasses and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "sunglasses_left_of_armchair.jpeg",
+      "sunglasses_right_of_armchair.jpeg",
+      "sunglasses_on_armchair.jpeg",
+      "sunglasses_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "sunglasses_left_of_armchair.jpeg": "Left",
+      "sunglasses_right_of_armchair.jpeg": "Right",
+      "sunglasses_on_armchair.jpeg": "On top",
+      "sunglasses_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the sunglasses relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the sunglasses relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the sunglasses and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the sunglasses and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "scarf_left_of_chair.jpeg",
+      "scarf_right_of_chair.jpeg",
+      "scarf_on_chair.jpeg",
+      "scarf_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "scarf_left_of_chair.jpeg": "Left",
+      "scarf_right_of_chair.jpeg": "Right",
+      "scarf_on_chair.jpeg": "On top",
+      "scarf_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the scarf relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the scarf relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scarf and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the scarf and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "scarf_left_of_table.jpeg",
+      "scarf_right_of_table.jpeg",
+      "scarf_on_table.jpeg",
+      "scarf_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "scarf_left_of_table.jpeg": "Left",
+      "scarf_right_of_table.jpeg": "Right",
+      "scarf_on_table.jpeg": "On top",
+      "scarf_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the scarf relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the scarf relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scarf and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the scarf and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "scarf_left_of_armchair.jpeg",
+      "scarf_right_of_armchair.jpeg",
+      "scarf_on_armchair.jpeg",
+      "scarf_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "scarf_left_of_armchair.jpeg": "Left",
+      "scarf_right_of_armchair.jpeg": "Right",
+      "scarf_on_armchair.jpeg": "On top",
+      "scarf_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the scarf relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the scarf relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scarf and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the scarf and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "plate_left_of_chair.jpeg",
+      "plate_right_of_chair.jpeg",
+      "plate_on_chair.jpeg",
+      "plate_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "plate_left_of_chair.jpeg": "Left",
+      "plate_right_of_chair.jpeg": "Right",
+      "plate_on_chair.jpeg": "On top",
+      "plate_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the plate relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the plate relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plate and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the plate and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "plate_left_of_table.jpeg",
+      "plate_right_of_table.jpeg",
+      "plate_on_table.jpeg",
+      "plate_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "plate_left_of_table.jpeg": "Left",
+      "plate_right_of_table.jpeg": "Right",
+      "plate_on_table.jpeg": "On top",
+      "plate_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the plate relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the plate relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plate and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the plate and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "plate_left_of_armchair.jpeg",
+      "plate_right_of_armchair.jpeg",
+      "plate_on_armchair.jpeg",
+      "plate_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "plate_left_of_armchair.jpeg": "Left",
+      "plate_right_of_armchair.jpeg": "Right",
+      "plate_on_armchair.jpeg": "On top",
+      "plate_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the plate relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the plate relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plate and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the plate and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "pillow_left_of_chair.jpeg",
+      "pillow_right_of_chair.jpeg",
+      "pillow_on_chair.jpeg",
+      "pillow_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "pillow_left_of_chair.jpeg": "Left",
+      "pillow_right_of_chair.jpeg": "Right",
+      "pillow_on_chair.jpeg": "On top",
+      "pillow_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the pillow relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the pillow relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pillow and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the pillow and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "pillow_left_of_table.jpeg",
+      "pillow_right_of_table.jpeg",
+      "pillow_on_table.jpeg",
+      "pillow_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "pillow_left_of_table.jpeg": "Left",
+      "pillow_right_of_table.jpeg": "Right",
+      "pillow_on_table.jpeg": "On top",
+      "pillow_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the pillow relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the pillow relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pillow and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the pillow and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "pillow_left_of_armchair.jpeg",
+      "pillow_right_of_armchair.jpeg",
+      "pillow_on_armchair.jpeg",
+      "pillow_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "pillow_left_of_armchair.jpeg": "Left",
+      "pillow_right_of_armchair.jpeg": "Right",
+      "pillow_on_armchair.jpeg": "On top",
+      "pillow_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the pillow relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the pillow relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pillow and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the pillow and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "orange_left_of_chair.jpeg",
+      "orange_right_of_chair.jpeg",
+      "orange_on_chair.jpeg",
+      "orange_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "orange_left_of_chair.jpeg": "Left",
+      "orange_right_of_chair.jpeg": "Right",
+      "orange_on_chair.jpeg": "On top",
+      "orange_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the orange relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the orange relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the orange and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the orange and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "orange_left_of_table.jpeg",
+      "orange_right_of_table.jpeg",
+      "orange_on_table.jpeg",
+      "orange_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "orange_left_of_table.jpeg": "Left",
+      "orange_right_of_table.jpeg": "Right",
+      "orange_on_table.jpeg": "On top",
+      "orange_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the orange relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the orange relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the orange and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the orange and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "orange_left_of_armchair.jpeg",
+      "orange_right_of_armchair.jpeg",
+      "orange_on_armchair.jpeg",
+      "orange_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "orange_left_of_armchair.jpeg": "Left",
+      "orange_right_of_armchair.jpeg": "Right",
+      "orange_on_armchair.jpeg": "On top",
+      "orange_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the orange relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the orange relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the orange and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the orange and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "mug_left_of_chair.jpeg",
+      "mug_right_of_chair.jpeg",
+      "mug_on_chair.jpeg",
+      "mug_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "mug_left_of_chair.jpeg": "Left",
+      "mug_right_of_chair.jpeg": "Right",
+      "mug_on_chair.jpeg": "On top",
+      "mug_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the mug relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the mug relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the mug and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the mug and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "mug_left_of_table.jpeg",
+      "mug_right_of_table.jpeg",
+      "mug_on_table.jpeg",
+      "mug_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "mug_left_of_table.jpeg": "Left",
+      "mug_right_of_table.jpeg": "Right",
+      "mug_on_table.jpeg": "On top",
+      "mug_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the mug relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the mug relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the mug and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the mug and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "mug_left_of_armchair.jpeg",
+      "mug_right_of_armchair.jpeg",
+      "mug_on_armchair.jpeg",
+      "mug_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "mug_left_of_armchair.jpeg": "Left",
+      "mug_right_of_armchair.jpeg": "Right",
+      "mug_on_armchair.jpeg": "On top",
+      "mug_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the mug relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the mug relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the mug and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the mug and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "cup_left_of_chair.jpeg",
+      "cup_right_of_chair.jpeg",
+      "cup_on_chair.jpeg",
+      "cup_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "cup_left_of_chair.jpeg": "Left",
+      "cup_right_of_chair.jpeg": "Right",
+      "cup_on_chair.jpeg": "On top",
+      "cup_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the cup relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the cup relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cup and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the cup and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "cup_left_of_table.jpeg",
+      "cup_right_of_table.jpeg",
+      "cup_on_table.jpeg",
+      "cup_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "cup_left_of_table.jpeg": "Left",
+      "cup_right_of_table.jpeg": "Right",
+      "cup_on_table.jpeg": "On top",
+      "cup_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the cup relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the cup relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cup and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the cup and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "cup_left_of_armchair.jpeg",
+      "cup_right_of_armchair.jpeg",
+      "cup_on_armchair.jpeg",
+      "cup_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "cup_left_of_armchair.jpeg": "Left",
+      "cup_right_of_armchair.jpeg": "Right",
+      "cup_on_armchair.jpeg": "On top",
+      "cup_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the cup relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the cup relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cup and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the cup and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bottle-of-mustard_left_of_chair.jpeg",
+      "bottle-of-mustard_right_of_chair.jpeg",
+      "bottle-of-mustard_on_chair.jpeg",
+      "bottle-of-mustard_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "bottle-of-mustard_left_of_chair.jpeg": "Left",
+      "bottle-of-mustard_right_of_chair.jpeg": "Right",
+      "bottle-of-mustard_on_chair.jpeg": "On top",
+      "bottle-of-mustard_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bottle of mustard relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bottle of mustard relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle of mustard and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bottle of mustard and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bottle-of-orange-juice_left_of_chair.jpeg",
+      "bottle-of-orange-juice_right_of_chair.jpeg",
+      "bottle-of-orange-juice_on_chair.jpeg",
+      "bottle-of-orange-juice_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "bottle-of-orange-juice_left_of_chair.jpeg": "Left",
+      "bottle-of-orange-juice_right_of_chair.jpeg": "Right",
+      "bottle-of-orange-juice_on_chair.jpeg": "On top",
+      "bottle-of-orange-juice_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bottle of orange juice relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bottle of orange juice relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle of orange juice and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bottle of orange juice and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "box_left_of_chair.jpeg",
+      "box_right_of_chair.jpeg",
+      "box_on_chair.jpeg",
+      "box_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "box_left_of_chair.jpeg": "Left",
+      "box_right_of_chair.jpeg": "Right",
+      "box_on_chair.jpeg": "On top",
+      "box_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the box relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the box relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the box and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the box and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "can_left_of_chair.jpeg",
+      "can_right_of_chair.jpeg",
+      "can_on_chair.jpeg",
+      "can_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "can_left_of_chair.jpeg": "Left",
+      "can_right_of_chair.jpeg": "Right",
+      "can_on_chair.jpeg": "On top",
+      "can_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the can relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the can relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the can and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the can and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "dragonfruit_left_of_chair.jpeg",
+      "dragonfruit_right_of_chair.jpeg",
+      "dragonfruit_on_chair.jpeg",
+      "dragonfruit_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "dragonfruit_left_of_chair.jpeg": "Left",
+      "dragonfruit_right_of_chair.jpeg": "Right",
+      "dragonfruit_on_chair.jpeg": "On top",
+      "dragonfruit_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the dragonfruit relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the dragonfruit relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the dragonfruit and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the dragonfruit and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "hat_left_of_chair.jpeg",
+      "hat_right_of_chair.jpeg",
+      "hat_on_chair.jpeg",
+      "hat_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "hat_left_of_chair.jpeg": "Left",
+      "hat_right_of_chair.jpeg": "Right",
+      "hat_on_chair.jpeg": "On top",
+      "hat_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the hat relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the hat relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the hat and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the hat and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "headphones_left_of_chair.jpeg",
+      "headphones_right_of_chair.jpeg",
+      "headphones_on_chair.jpeg",
+      "headphones_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "headphones_left_of_chair.jpeg": "Left",
+      "headphones_right_of_chair.jpeg": "Right",
+      "headphones_on_chair.jpeg": "On top",
+      "headphones_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the headphones relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the headphones relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the headphones and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the headphones and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "helmet_left_of_chair.jpeg",
+      "helmet_right_of_chair.jpeg",
+      "helmet_on_chair.jpeg",
+      "helmet_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "helmet_left_of_chair.jpeg": "Left",
+      "helmet_right_of_chair.jpeg": "Right",
+      "helmet_on_chair.jpeg": "On top",
+      "helmet_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the helmet relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the helmet relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the helmet and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the helmet and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "kettle_left_of_chair.jpeg",
+      "kettle_right_of_chair.jpeg",
+      "kettle_on_chair.jpeg",
+      "kettle_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "kettle_left_of_chair.jpeg": "Left",
+      "kettle_right_of_chair.jpeg": "Right",
+      "kettle_on_chair.jpeg": "On top",
+      "kettle_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the kettle relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the kettle relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the kettle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the kettle and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "knife_left_of_chair.jpeg",
+      "knife_right_of_chair.jpeg",
+      "knife_on_chair.jpeg",
+      "knife_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "knife_left_of_chair.jpeg": "Left",
+      "knife_right_of_chair.jpeg": "Right",
+      "knife_on_chair.jpeg": "On top",
+      "knife_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the knife relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the knife relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the knife and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the knife and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "lamp_left_of_chair.jpeg",
+      "lamp_right_of_chair.jpeg",
+      "lamp_on_chair.jpeg",
+      "lamp_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "lamp_left_of_chair.jpeg": "Left",
+      "lamp_right_of_chair.jpeg": "Right",
+      "lamp_on_chair.jpeg": "On top",
+      "lamp_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the lamp relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the lamp relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lamp and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the lamp and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "laptop_left_of_chair.jpeg",
+      "laptop_right_of_chair.jpeg",
+      "laptop_on_chair.jpeg",
+      "laptop_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "laptop_left_of_chair.jpeg": "Left",
+      "laptop_right_of_chair.jpeg": "Right",
+      "laptop_on_chair.jpeg": "On top",
+      "laptop_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the laptop relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the laptop relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the laptop and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the laptop and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "lemon_left_of_chair.jpeg",
+      "lemon_right_of_chair.jpeg",
+      "lemon_on_chair.jpeg",
+      "lemon_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "lemon_left_of_chair.jpeg": "Left",
+      "lemon_right_of_chair.jpeg": "Right",
+      "lemon_on_chair.jpeg": "On top",
+      "lemon_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the lemon relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the lemon relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lemon and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the lemon and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "microphone_left_of_chair.jpeg",
+      "microphone_right_of_chair.jpeg",
+      "microphone_on_chair.jpeg",
+      "microphone_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "microphone_left_of_chair.jpeg": "Left",
+      "microphone_right_of_chair.jpeg": "Right",
+      "microphone_on_chair.jpeg": "On top",
+      "microphone_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the microphone relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the microphone relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the microphone and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the microphone and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "oven-mitt_left_of_chair.jpeg",
+      "oven-mitt_right_of_chair.jpeg",
+      "oven-mitt_on_chair.jpeg",
+      "oven-mitt_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "oven-mitt_left_of_chair.jpeg": "Left",
+      "oven-mitt_right_of_chair.jpeg": "Right",
+      "oven-mitt_on_chair.jpeg": "On top",
+      "oven-mitt_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the oven mitt relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the oven mitt relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the oven mitt and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the oven mitt and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "painting_left_of_chair.jpeg",
+      "painting_right_of_chair.jpeg",
+      "painting_on_chair.jpeg",
+      "painting_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "painting_left_of_chair.jpeg": "Left",
+      "painting_right_of_chair.jpeg": "Right",
+      "painting_on_chair.jpeg": "On top",
+      "painting_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the painting relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the painting relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the painting and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the painting and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "pan_left_of_chair.jpeg",
+      "pan_right_of_chair.jpeg",
+      "pan_on_chair.jpeg",
+      "pan_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "pan_left_of_chair.jpeg": "Left",
+      "pan_right_of_chair.jpeg": "Right",
+      "pan_on_chair.jpeg": "On top",
+      "pan_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the pan relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the pan relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pan and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the pan and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "photograph_left_of_chair.jpeg",
+      "photograph_right_of_chair.jpeg",
+      "photograph_on_chair.jpeg",
+      "photograph_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "photograph_left_of_chair.jpeg": "Left",
+      "photograph_right_of_chair.jpeg": "Right",
+      "photograph_on_chair.jpeg": "On top",
+      "photograph_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the photograph relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the photograph relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the photograph and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the photograph and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "plant_left_of_chair.jpeg",
+      "plant_right_of_chair.jpeg",
+      "plant_on_chair.jpeg",
+      "plant_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "plant_left_of_chair.jpeg": "Left",
+      "plant_right_of_chair.jpeg": "Right",
+      "plant_on_chair.jpeg": "On top",
+      "plant_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the plant relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the plant relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plant and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the plant and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "pot_left_of_chair.jpeg",
+      "pot_right_of_chair.jpeg",
+      "pot_on_chair.jpeg",
+      "pot_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "pot_left_of_chair.jpeg": "Left",
+      "pot_right_of_chair.jpeg": "Right",
+      "pot_on_chair.jpeg": "On top",
+      "pot_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the pot relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the pot relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pot and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the pot and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "remote_left_of_chair.jpeg",
+      "remote_right_of_chair.jpeg",
+      "remote_on_chair.jpeg",
+      "remote_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "remote_left_of_chair.jpeg": "Left",
+      "remote_right_of_chair.jpeg": "Right",
+      "remote_on_chair.jpeg": "On top",
+      "remote_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the remote relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the remote relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the remote and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the remote and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "scissors_left_of_chair.jpeg",
+      "scissors_right_of_chair.jpeg",
+      "scissors_on_chair.jpeg",
+      "scissors_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "scissors_left_of_chair.jpeg": "Left",
+      "scissors_right_of_chair.jpeg": "Right",
+      "scissors_on_chair.jpeg": "On top",
+      "scissors_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the scissors relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the scissors relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scissors and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the scissors and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "shoes_left_of_chair.jpeg",
+      "shoes_right_of_chair.jpeg",
+      "shoes_on_chair.jpeg",
+      "shoes_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "shoes_left_of_chair.jpeg": "Left",
+      "shoes_right_of_chair.jpeg": "Right",
+      "shoes_on_chair.jpeg": "On top",
+      "shoes_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the shoes relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the shoes relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the shoes and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the shoes and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "spatula_left_of_chair.jpeg",
+      "spatula_right_of_chair.jpeg",
+      "spatula_on_chair.jpeg",
+      "spatula_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "spatula_left_of_chair.jpeg": "Left",
+      "spatula_right_of_chair.jpeg": "Right",
+      "spatula_on_chair.jpeg": "On top",
+      "spatula_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the spatula relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the spatula relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the spatula and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the spatula and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "toilet-roll_left_of_chair.jpeg",
+      "toilet-roll_right_of_chair.jpeg",
+      "toilet-roll_on_chair.jpeg",
+      "toilet-roll_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "toilet-roll_left_of_chair.jpeg": "Left",
+      "toilet-roll_right_of_chair.jpeg": "Right",
+      "toilet-roll_on_chair.jpeg": "On top",
+      "toilet-roll_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the toilet roll relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the toilet roll relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the toilet roll and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the toilet roll and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "toy-cactus_left_of_chair.jpeg",
+      "toy-cactus_right_of_chair.jpeg",
+      "toy-cactus_on_chair.jpeg",
+      "toy-cactus_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "toy-cactus_left_of_chair.jpeg": "Left",
+      "toy-cactus_right_of_chair.jpeg": "Right",
+      "toy-cactus_on_chair.jpeg": "On top",
+      "toy-cactus_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the toy cactus relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the toy cactus relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the toy cactus and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the toy cactus and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "vase_left_of_chair.jpeg",
+      "vase_right_of_chair.jpeg",
+      "vase_on_chair.jpeg",
+      "vase_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "vase_left_of_chair.jpeg": "Left",
+      "vase_right_of_chair.jpeg": "Right",
+      "vase_on_chair.jpeg": "On top",
+      "vase_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the vase relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the vase relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the vase and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the vase and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "water-bottle_left_of_chair.jpeg",
+      "water-bottle_right_of_chair.jpeg",
+      "water-bottle_on_chair.jpeg",
+      "water-bottle_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "water-bottle_left_of_chair.jpeg": "Left",
+      "water-bottle_right_of_chair.jpeg": "Right",
+      "water-bottle_on_chair.jpeg": "On top",
+      "water-bottle_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the water bottle relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the water bottle relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the water bottle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the water bottle and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "water-filter_left_of_chair.jpeg",
+      "water-filter_right_of_chair.jpeg",
+      "water-filter_on_chair.jpeg",
+      "water-filter_under_chair.jpeg"
+    ],
+    "ground_truth": {
+      "water-filter_left_of_chair.jpeg": "Left",
+      "water-filter_right_of_chair.jpeg": "Right",
+      "water-filter_on_chair.jpeg": "On top",
+      "water-filter_under_chair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the water filter relative to the chair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the water filter relative to the chair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the water filter and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the water filter and the chair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "bread_left_of_armchair.jpeg",
+      "bread_right_of_armchair.jpeg",
+      "bread_on_armchair.jpeg",
+      "bread_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "bread_left_of_armchair.jpeg": "Left",
+      "bread_right_of_armchair.jpeg": "Right",
+      "bread_on_armchair.jpeg": "On top",
+      "bread_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the bread relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the bread relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bread and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the bread and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "can_left_of_armchair.jpeg",
+      "can_right_of_armchair.jpeg",
+      "can_on_armchair.jpeg",
+      "can_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "can_left_of_armchair.jpeg": "Left",
+      "can_right_of_armchair.jpeg": "Right",
+      "can_on_armchair.jpeg": "On top",
+      "can_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the can relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the can relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the can and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the can and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "glass_left_of_armchair.jpeg",
+      "glass_right_of_armchair.jpeg",
+      "glass_on_armchair.jpeg",
+      "glass_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "glass_left_of_armchair.jpeg": "Left",
+      "glass_right_of_armchair.jpeg": "Right",
+      "glass_on_armchair.jpeg": "On top",
+      "glass_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the glass relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the glass relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the glass and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the glass and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "glasses_left_of_armchair.jpeg",
+      "glasses_right_of_armchair.jpeg",
+      "glasses_on_armchair.jpeg",
+      "glasses_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "glasses_left_of_armchair.jpeg": "Left",
+      "glasses_right_of_armchair.jpeg": "Right",
+      "glasses_on_armchair.jpeg": "On top",
+      "glasses_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the glasses relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the glasses relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the glasses and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the glasses and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "glove_left_of_armchair.jpeg",
+      "glove_right_of_armchair.jpeg",
+      "glove_on_armchair.jpeg",
+      "glove_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "glove_left_of_armchair.jpeg": "Left",
+      "glove_right_of_armchair.jpeg": "Right",
+      "glove_on_armchair.jpeg": "On top",
+      "glove_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the glove relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the glove relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the glove and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the glove and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "headphones_left_of_armchair.jpeg",
+      "headphones_right_of_armchair.jpeg",
+      "headphones_on_armchair.jpeg",
+      "headphones_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "headphones_left_of_armchair.jpeg": "Left",
+      "headphones_right_of_armchair.jpeg": "Right",
+      "headphones_on_armchair.jpeg": "On top",
+      "headphones_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the headphones relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the headphones relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the headphones and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the headphones and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "laptop_left_of_armchair.jpeg",
+      "laptop_right_of_armchair.jpeg",
+      "laptop_on_armchair.jpeg",
+      "laptop_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "laptop_left_of_armchair.jpeg": "Left",
+      "laptop_right_of_armchair.jpeg": "Right",
+      "laptop_on_armchair.jpeg": "On top",
+      "laptop_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the laptop relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the laptop relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the laptop and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the laptop and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "notepad_left_of_armchair.jpeg",
+      "notepad_right_of_armchair.jpeg",
+      "notepad_on_armchair.jpeg",
+      "notepad_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "notepad_left_of_armchair.jpeg": "Left",
+      "notepad_right_of_armchair.jpeg": "Right",
+      "notepad_on_armchair.jpeg": "On top",
+      "notepad_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the notepad relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the notepad relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the notepad and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the notepad and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "pan_left_of_armchair.jpeg",
+      "pan_right_of_armchair.jpeg",
+      "pan_on_armchair.jpeg",
+      "pan_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "pan_left_of_armchair.jpeg": "Left",
+      "pan_right_of_armchair.jpeg": "Right",
+      "pan_on_armchair.jpeg": "On top",
+      "pan_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the pan relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the pan relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pan and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the pan and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "phone_left_of_armchair.jpeg",
+      "phone_right_of_armchair.jpeg",
+      "phone_on_armchair.jpeg",
+      "phone_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "phone_left_of_armchair.jpeg": "Left",
+      "phone_right_of_armchair.jpeg": "Right",
+      "phone_on_armchair.jpeg": "On top",
+      "phone_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the phone relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the phone relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the phone and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the phone and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "remote_left_of_armchair.jpeg",
+      "remote_right_of_armchair.jpeg",
+      "remote_on_armchair.jpeg",
+      "remote_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "remote_left_of_armchair.jpeg": "Left",
+      "remote_right_of_armchair.jpeg": "Right",
+      "remote_on_armchair.jpeg": "On top",
+      "remote_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the remote relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the remote relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the remote and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the remote and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "rose_left_of_armchair.jpeg",
+      "rose_right_of_armchair.jpeg",
+      "rose_on_armchair.jpeg",
+      "rose_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "rose_left_of_armchair.jpeg": "Left",
+      "rose_right_of_armchair.jpeg": "Right",
+      "rose_on_armchair.jpeg": "On top",
+      "rose_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the rose relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the rose relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the rose and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the rose and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "soda-can_left_of_armchair.jpeg",
+      "soda-can_right_of_armchair.jpeg",
+      "soda-can_on_armchair.jpeg",
+      "soda-can_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "soda-can_left_of_armchair.jpeg": "Left",
+      "soda-can_right_of_armchair.jpeg": "Right",
+      "soda-can_on_armchair.jpeg": "On top",
+      "soda-can_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the soda can relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the soda can relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the soda can and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the soda can and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "tape_left_of_armchair.jpeg",
+      "tape_right_of_armchair.jpeg",
+      "tape_on_armchair.jpeg",
+      "tape_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "tape_left_of_armchair.jpeg": "Left",
+      "tape_right_of_armchair.jpeg": "Right",
+      "tape_on_armchair.jpeg": "On top",
+      "tape_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the tape relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the tape relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the tape and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the tape and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "water-bottle_left_of_armchair.jpeg",
+      "water-bottle_right_of_armchair.jpeg",
+      "water-bottle_on_armchair.jpeg",
+      "water-bottle_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "water-bottle_left_of_armchair.jpeg": "Left",
+      "water-bottle_right_of_armchair.jpeg": "Right",
+      "water-bottle_on_armchair.jpeg": "On top",
+      "water-bottle_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the water bottle relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the water bottle relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the water bottle and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the water bottle and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "yarn_left_of_armchair.jpeg",
+      "yarn_right_of_armchair.jpeg",
+      "yarn_on_armchair.jpeg",
+      "yarn_under_armchair.jpeg"
+    ],
+    "ground_truth": {
+      "yarn_left_of_armchair.jpeg": "Left",
+      "yarn_right_of_armchair.jpeg": "Right",
+      "yarn_on_armchair.jpeg": "On top",
+      "yarn_under_armchair.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the yarn relative to the armchair? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the yarn relative to the armchair? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the yarn and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the yarn and the armchair and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "toilet-roll_left_of_table.jpeg",
+      "toilet-roll_right_of_table.jpeg",
+      "toilet-roll_on_table.jpeg",
+      "toilet-roll_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "toilet-roll_left_of_table.jpeg": "Left",
+      "toilet-roll_right_of_table.jpeg": "Right",
+      "toilet-roll_on_table.jpeg": "On top",
+      "toilet-roll_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the toilet roll relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the toilet roll relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the toilet roll and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the toilet roll and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "spatula_left_of_table.jpeg",
+      "spatula_right_of_table.jpeg",
+      "spatula_on_table.jpeg",
+      "spatula_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "spatula_left_of_table.jpeg": "Left",
+      "spatula_right_of_table.jpeg": "Right",
+      "spatula_on_table.jpeg": "On top",
+      "spatula_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the spatula relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the spatula relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the spatula and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the spatula and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "scissors_left_of_table.jpeg",
+      "scissors_right_of_table.jpeg",
+      "scissors_on_table.jpeg",
+      "scissors_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "scissors_left_of_table.jpeg": "Left",
+      "scissors_right_of_table.jpeg": "Right",
+      "scissors_on_table.jpeg": "On top",
+      "scissors_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the scissors relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the scissors relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scissors and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the scissors and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "plant_left_of_table.jpeg",
+      "plant_right_of_table.jpeg",
+      "plant_on_table.jpeg",
+      "plant_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "plant_left_of_table.jpeg": "Left",
+      "plant_right_of_table.jpeg": "Right",
+      "plant_on_table.jpeg": "On top",
+      "plant_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the plant relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the plant relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plant and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the plant and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "phone_left_of_table.jpeg",
+      "phone_right_of_table.jpeg",
+      "phone_on_table.jpeg",
+      "phone_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "phone_left_of_table.jpeg": "Left",
+      "phone_right_of_table.jpeg": "Right",
+      "phone_on_table.jpeg": "On top",
+      "phone_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the phone relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the phone relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the phone and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the phone and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "painting_left_of_table.jpeg",
+      "painting_right_of_table.jpeg",
+      "painting_on_table.jpeg",
+      "painting_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "painting_left_of_table.jpeg": "Left",
+      "painting_right_of_table.jpeg": "Right",
+      "painting_on_table.jpeg": "On top",
+      "painting_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the painting relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the painting relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the painting and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the painting and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "lemon_left_of_table.jpeg",
+      "lemon_right_of_table.jpeg",
+      "lemon_on_table.jpeg",
+      "lemon_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "lemon_left_of_table.jpeg": "Left",
+      "lemon_right_of_table.jpeg": "Right",
+      "lemon_on_table.jpeg": "On top",
+      "lemon_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the lemon relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the lemon relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lemon and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the lemon and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "lamp_left_of_table.jpeg",
+      "lamp_right_of_table.jpeg",
+      "lamp_on_table.jpeg",
+      "lamp_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "lamp_left_of_table.jpeg": "Left",
+      "lamp_right_of_table.jpeg": "Right",
+      "lamp_on_table.jpeg": "On top",
+      "lamp_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the lamp relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the lamp relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lamp and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the lamp and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "knife_left_of_table.jpeg",
+      "knife_right_of_table.jpeg",
+      "knife_on_table.jpeg",
+      "knife_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "knife_left_of_table.jpeg": "Left",
+      "knife_right_of_table.jpeg": "Right",
+      "knife_on_table.jpeg": "On top",
+      "knife_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the knife relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the knife relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the knife and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the knife and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "kettle_left_of_table.jpeg",
+      "kettle_right_of_table.jpeg",
+      "kettle_on_table.jpeg",
+      "kettle_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "kettle_left_of_table.jpeg": "Left",
+      "kettle_right_of_table.jpeg": "Right",
+      "kettle_on_table.jpeg": "On top",
+      "kettle_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the kettle relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the kettle relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the kettle and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the kettle and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "helmet_left_of_table.jpeg",
+      "helmet_right_of_table.jpeg",
+      "helmet_on_table.jpeg",
+      "helmet_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "helmet_left_of_table.jpeg": "Left",
+      "helmet_right_of_table.jpeg": "Right",
+      "helmet_on_table.jpeg": "On top",
+      "helmet_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the helmet relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the helmet relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the helmet and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the helmet and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "dragonfruit_left_of_table.jpeg",
+      "dragonfruit_right_of_table.jpeg",
+      "dragonfruit_on_table.jpeg",
+      "dragonfruit_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "dragonfruit_left_of_table.jpeg": "Left",
+      "dragonfruit_right_of_table.jpeg": "Right",
+      "dragonfruit_on_table.jpeg": "On top",
+      "dragonfruit_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the dragonfruit relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the dragonfruit relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the dragonfruit and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the dragonfruit and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "dog_left_of_table.jpeg",
+      "dog_right_of_table.jpeg",
+      "dog_on_table.jpeg",
+      "dog_under_table.jpeg"
+    ],
+    "ground_truth": {
+      "dog_left_of_table.jpeg": "Left",
+      "dog_right_of_table.jpeg": "Right",
+      "dog_on_table.jpeg": "On top",
+      "dog_under_table.jpeg": "Under"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the dog relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the dog relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the dog and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the dog and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "chair2_left_of_table.jpeg",
+      "chair2_right_of_table.jpeg",
+      "chair2_on_table.jpeg"
+    ],
+    "ground_truth": {
+      "chair2_left_of_table.jpeg": "Left",
+      "chair2_right_of_table.jpeg": "Right",
+      "chair2_on_table.jpeg": "On top"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the chair2 relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the chair2 relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the chair2 and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the chair2 and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  },
+  {
+    "image": [
+      "chair_left_of_table.jpeg",
+      "chair_right_of_table.jpeg",
+      "chair_on_table.jpeg"
+    ],
+    "ground_truth": {
+      "chair_left_of_table.jpeg": "Left",
+      "chair_right_of_table.jpeg": "Right",
+      "chair_on_table.jpeg": "On top"
+    },
+    "prompts": [
+      {
+        "prompt": "Where is the chair relative to the table? Choose one option using the following mapping: A = Left, B = Right, C = On top, D = Under",
+        "label": "Multiple Choice"
+      },
+      {
+        "prompt": "Where is the chair relative to the table? Think step by step about the spatial relationship between the objects in the image. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Chain-of-Thought"
+      },
+      {
+        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the chair and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Scene Graph CoT"
+      },
+      {
+        "prompt": "Describe the scene in the image in detail, including all visible objects and their positions. Then focus specifically on the chair and the table and describe their spatial relationship. Finally, answer the question using the following mapping: A = Left, B = Right, C = On top, D = Under. Give your final answer as a single letter.",
+        "label": "Multi-stage Descriptive"
+      }
+    ]
+  }
+]

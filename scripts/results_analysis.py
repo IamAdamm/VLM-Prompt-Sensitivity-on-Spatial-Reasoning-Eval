@@ -69,6 +69,52 @@ for _, row in prompt_stats.iterrows():
 print("-" * 60)
 print()
 
+# Accuracy per ground truth (which option/direction was correct)
+# Map ground truth to expected answer option
+ground_truth_to_option = {
+    'Left': 'A',
+    'Right': 'B', 
+    'On top': 'C',
+    'Under': 'D'
+}
+
+# Add expected option column
+df['expected_option'] = df['ground_truth'].map(ground_truth_to_option)
+
+# Calculate accuracy per ground truth category
+print("Accuracy per Ground Truth (Correct Answer Direction):")
+print("-" * 60)
+ground_truth_stats = df.groupby('ground_truth').agg({
+    'correct': ['mean', 'sum', 'count']
+}).reset_index()
+ground_truth_stats.columns = ['ground_truth', 'accuracy', 'correct_count', 'total_count']
+
+for _, row in ground_truth_stats.iterrows():
+    option = ground_truth_to_option.get(row['ground_truth'], '?')
+    print(f"  {row['ground_truth']:10} (Option {option}): {row['accuracy'] * 100:.2f}% ({int(row['correct_count'])}/{int(row['total_count'])} correct)")
+    wandb.log({f"accuracy_ground_truth_{row['ground_truth']}": row['accuracy']})
+
+print("-" * 60)
+print()
+
+# Plot accuracy per ground truth
+plt.figure(figsize=(8,5))
+colors = ['#2ecc71', '#3498db', '#9b59b6', '#e74c3c']  # Green, Blue, Purple, Red
+bars = plt.bar(ground_truth_stats['ground_truth'], ground_truth_stats['accuracy'], color=colors)
+plt.ylabel('Accuracy')
+plt.ylim(0, 1)
+plt.xlabel('Ground Truth (Correct Answer)')
+plt.title('Accuracy per Ground Truth Direction')
+# Add option labels on bars
+for bar, gt in zip(bars, ground_truth_stats['ground_truth']):
+    option = ground_truth_to_option.get(gt, '?')
+    plt.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 0.02, 
+             f'Option {option}', ha='center', va='bottom', fontsize=10)
+plt.tight_layout()
+wandb.log({"accuracy_per_ground_truth": wandb.Image(plt)})
+plt.show()
+plt.close()
+
 # Plot accuracy per prompt type
 plt.figure(figsize=(10,5))
 sns.barplot(x='prompt_label', y='accuracy', data=prompt_stats, palette="viridis")
