@@ -3,6 +3,7 @@ import wandb
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import re
 
 # Initialize W&B (offline mode)
 wandb.init(project="llava-results", name="MultipleChoice_accuracy_analysis", mode="offline")
@@ -15,20 +16,127 @@ with open(results_file, 'r') as f:
 # Prepare DataFrame
 df = pd.DataFrame(results)
 
-# Check correctness explicitly
+def extract_answer(answer):
+    """
+    Extract a single letter answer (A, B, C, or D) from various response formats.
+    Returns the normalized letter or 'INVALID' if no clear answer can be determined.
+    """
+    if not answer or not isinstance(answer, str):
+        return 'INVALID'
+    
+    answer = answer.strip()
+    
+    # Case 1: Single letter (with optional period)
+    if re.match(r'^[A-D]\.?$', answer):
+        return answer[0]
+    
+    # Case 2: Check if the answer ENDS with a letter (possibly with period)
+    # This handles cases like "Based on my analysis... A" or "The answer is B."
+    end_match = re.search(r'[A-D]\.?$', answer)
+    if end_match:
+        return end_match.group()[0]
+    
+    # Case 3: Model repeated the mapping without answering
+    # e.g., "A = Left, B = Right, C = On top, D = Under" or "A, B, C, D"
+    if re.match(r'^A\s*=\s*Left', answer) or answer == "A, B, C, D":
+        return 'INVALID'
+    
+    # Case 4: Check for variations like "A = Left, B = Right, C = Table, D = Floor"
+    # These are also invalid (model confused the mapping)
+    if re.match(r'^A\s*=\s*\w+,\s*B\s*=', answer):
+        return 'INVALID'
+    
+    # Case 5: Long descriptive answer - try to extract spatial relationship
+    # Look for explicit statements about position
+    answer_lower = answer.lower()
+    
+    # Check for clear positional statements
+    # Priority: look for "is on the left", "to the left of", "left side", etc.
+    left_patterns = [
+        r'\bon the left\b', r'\bto the left\b', r'\bleft side\b', r'\bleft of\b',
+        r'\bpositioned.*left\b', r'\bplaced.*left\b', r'\blocated.*left\b'
+    ]
+    right_patterns = [
+        r'\bon the right\b', r'\bto the right\b', r'\bright side\b', r'\bright of\b',
+        r'\bpositioned.*right\b', r'\bplaced.*right\b', r'\blocated.*right\b'
+    ]
+    top_patterns = [
+        r'\bon top\b', r'\bon the top\b', r'\babove\b', r'\bresting on\b',
+        r'\bsitting on\b', r'\bplaced on\b', r'\bon the chair\b', r'\bon the table\b',
+        r'\bon the armchair\b', r'\bon the seat\b'
+    ]
+    under_patterns = [
+        r'\bunder\b', r'\bunderneath\b', r'\bbeneath\b', r'\bbelow\b'
+    ]
+    
+    # Count matches for each direction
+    left_count = sum(1 for p in left_patterns if re.search(p, answer_lower))
+    right_count = sum(1 for p in right_patterns if re.search(p, answer_lower))
+    top_count = sum(1 for p in top_patterns if re.search(p, answer_lower))
+    under_count = sum(1 for p in under_patterns if re.search(p, answer_lower))
+    
+    # If one direction clearly dominates, use it
+    counts = {'A': left_count, 'B': right_count, 'C': top_count, 'D': under_count}
+    max_count = max(counts.values())
+    
+    if max_count > 0:
+        # Check if there's a clear winner (no tie)
+        winners = [k for k, v in counts.items() if v == max_count]
+        if len(winners) == 1:
+            return winners[0]
+    
+    # If we can't determine, mark as invalid
+    return 'INVALID'
+
+# Apply answer extraction
+df['extracted_answer'] = df['answer'].apply(extract_answer)
+
+# Count invalid answers
+invalid_count = (df['extracted_answer'] == 'INVALID').sum()
+total_count = len(df)
+print(f"Answer Extraction Summary:")
+print(f"  Total responses: {total_count}")
+print(f"  Valid answers: {total_count - invalid_count} ({(total_count - invalid_count) / total_count * 100:.1f}%)")
+print(f"  Invalid/unclear answers: {invalid_count} ({invalid_count / total_count * 100:.1f}%)")
+print()
+
+# Show breakdown of invalid answers by prompt type
+invalid_by_prompt = df[df['extracted_answer'] == 'INVALID'].groupby('prompt_label').size()
+print("Invalid answers by prompt type:")
+for prompt_type, count in invalid_by_prompt.items():
+    total_for_type = len(df[df['prompt_label'] == prompt_type])
+    print(f"  {prompt_type}: {count}/{total_for_type} ({count/total_for_type*100:.1f}%)")
+print()
+
+# Check correctness using extracted answer
 def is_correct(row):
-    if (row['answer'] == "A" and row['ground_truth'] == "Left") or \
-       (row['answer'] == "B" and row['ground_truth'] == "Right") or \
-       (row['answer'] == "C" and row['ground_truth'] == "On top") or \
-       (row['answer'] == "D" and row['ground_truth'] == "Under"):
-        return True
-    return False
+    answer = row['extracted_answer']
+    gt = row['ground_truth']
+    
+    if answer == 'INVALID':
+        return False
+    
+    correct_mapping = {
+        'Left': 'A',
+        'Right': 'B',
+        'On top': 'C',
+        'Under': 'D'
+    }
+    
+    return answer == correct_mapping.get(gt, None)
 
 df['correct'] = df.apply(is_correct, axis=1)
 
 # Overall accuracy
 accuracy = df['correct'].mean()
 print(f"Overall Multiple Choice Accuracy: {accuracy * 100:.2f}%")
+
+# Accuracy on VALID answers only (excluding invalid)
+valid_df = df[df['extracted_answer'] != 'INVALID']
+if len(valid_df) > 0:
+    valid_accuracy = valid_df['correct'].mean()
+    print(f"Accuracy on valid answers only: {valid_accuracy * 100:.2f}%")
+    wandb.log({"valid_only_accuracy": valid_accuracy})
 
 # Overall confidence (if available)
 if 'confidence' in df.columns and df['confidence'].notna().any():
@@ -41,6 +149,7 @@ else:
 
 print()
 wandb.log({"overall_accuracy": accuracy})
+wandb.log({"invalid_answer_rate": invalid_count / total_count})
 
 # Accuracy per prompt type
 prompt_accuracy = df.groupby('prompt_label')['correct'].mean().reset_index()

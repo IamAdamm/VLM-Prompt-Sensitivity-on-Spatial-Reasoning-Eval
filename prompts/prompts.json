@@ -22,7 +22,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the apple and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the apple is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -54,7 +54,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the ball of yarn and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the ball of yarn is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -86,7 +86,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the ball of yarn and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the ball of yarn is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -118,7 +118,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the banana and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the banana is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -150,7 +150,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the banana and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the banana is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -182,7 +182,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the banjo and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the banjo is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -214,7 +214,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the beer bottle and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the beer bottle is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -246,7 +246,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the beer bottle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the beer bottle is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -278,7 +278,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the blanket and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the blanket is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -310,7 +310,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the book and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the book is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -342,7 +342,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the book and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the book is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -374,7 +374,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the book and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the book is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -406,7 +406,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bottle is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -438,7 +438,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bottle is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -470,7 +470,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bottle is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -502,7 +502,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bowl and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bowl is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -534,7 +534,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bowl and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bowl is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -566,7 +566,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bowl and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bowl is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -598,7 +598,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cap and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the cap is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -630,7 +630,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cap and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the cap is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -662,7 +662,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cap and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the cap is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -694,7 +694,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the wineglass and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the wineglass is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -726,7 +726,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the wineglass and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the wineglass is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -758,7 +758,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the wineglass and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the wineglass is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -790,7 +790,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the sunglasses and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the sunglasses is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -822,7 +822,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the sunglasses and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the sunglasses is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -854,7 +854,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the sunglasses and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the sunglasses is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -886,7 +886,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scarf and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the scarf is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -918,7 +918,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scarf and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the scarf is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -950,7 +950,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scarf and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the scarf is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -982,7 +982,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plate and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the plate is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1014,7 +1014,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plate and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the plate is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1046,7 +1046,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plate and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the plate is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1078,7 +1078,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pillow and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the pillow is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1110,7 +1110,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pillow and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the pillow is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1142,7 +1142,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pillow and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the pillow is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1174,7 +1174,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the orange and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the orange is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1206,7 +1206,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the orange and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the orange is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1238,7 +1238,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the orange and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the orange is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1270,7 +1270,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the mug and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the mug is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1302,7 +1302,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the mug and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the mug is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1334,7 +1334,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the mug and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the mug is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1366,7 +1366,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cup and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the cup is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1398,7 +1398,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cup and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the cup is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1430,7 +1430,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the cup and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the cup is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1462,7 +1462,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle of mustard and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bottle of mustard is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1494,7 +1494,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bottle of orange juice and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bottle of orange juice is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1526,7 +1526,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the box and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the box is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1558,7 +1558,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the can and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the can is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1590,7 +1590,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the dragonfruit and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the dragonfruit is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1622,7 +1622,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the hat and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the hat is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1654,7 +1654,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the headphones and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the headphones is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1686,7 +1686,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the helmet and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the helmet is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1718,7 +1718,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the kettle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the kettle is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1750,7 +1750,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the knife and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the knife is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1782,7 +1782,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lamp and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the lamp is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1814,7 +1814,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the laptop and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the laptop is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1846,7 +1846,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lemon and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the lemon is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1878,7 +1878,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the microphone and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the microphone is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1910,7 +1910,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the oven mitt and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the oven mitt is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1942,7 +1942,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the painting and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the painting is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -1974,7 +1974,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pan and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the pan is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2006,7 +2006,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the photograph and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the photograph is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2038,7 +2038,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plant and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the plant is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2070,7 +2070,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pot and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the pot is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2102,7 +2102,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the remote and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the remote is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2134,7 +2134,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scissors and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the scissors is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2166,7 +2166,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the shoes and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the shoes is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2198,7 +2198,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the spatula and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the spatula is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2230,7 +2230,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the toilet roll and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the toilet roll is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2262,7 +2262,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the toy cactus and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the toy cactus is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2294,7 +2294,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the vase and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the vase is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2326,7 +2326,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the water bottle and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the water bottle is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2358,7 +2358,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the water filter and the chair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the water filter is positioned relative to the chair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2390,7 +2390,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the bread and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the bread is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2422,7 +2422,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the can and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the can is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2454,7 +2454,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the glass and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the glass is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2486,7 +2486,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the glasses and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the glasses is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2518,7 +2518,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the glove and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the glove is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2550,7 +2550,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the headphones and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the headphones is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2582,7 +2582,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the laptop and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the laptop is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2614,7 +2614,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the notepad and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the notepad is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2646,7 +2646,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the pan and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the pan is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2678,7 +2678,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the phone and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the phone is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2710,7 +2710,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the remote and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the remote is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2742,7 +2742,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the rose and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the rose is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2774,7 +2774,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the soda can and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the soda can is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2806,7 +2806,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the tape and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the tape is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2838,7 +2838,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the water bottle and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the water bottle is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2870,7 +2870,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the yarn and the armchair. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the yarn is positioned relative to the armchair. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2902,7 +2902,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the toilet roll and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the toilet roll is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2934,7 +2934,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the spatula and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the spatula is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2966,7 +2966,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the scissors and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the scissors is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -2998,7 +2998,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the plant and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the plant is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3030,7 +3030,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the phone and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the phone is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3062,7 +3062,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the painting and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the painting is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3094,7 +3094,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lemon and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the lemon is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3126,7 +3126,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the lamp and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the lamp is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3158,7 +3158,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the knife and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the knife is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3190,7 +3190,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the kettle and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the kettle is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3222,7 +3222,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the helmet and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the helmet is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3254,7 +3254,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the dragonfruit and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the dragonfruit is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3286,7 +3286,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the dog and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the dog is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3316,7 +3316,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the chair2 and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the chair2 is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
@@ -3346,7 +3346,7 @@
         "label": "Chain-of-Thought"
       },
       {
-        "prompt": "First, list the objects in the image and describe their relative spatial positions. Then determine the spatial relationship between the chair and the table. Use the following mapping for your final answer: A = Left, B = Right, C = On top, D = Under. **Write only the single letter corresponding to the correct answer: A, B, C, or D.**",
+        "prompt": "List the objects you see in the image. Describe where the chair is positioned relative to the table. Based on your analysis, select the correct spatial relationship: A = Left, B = Right, C = On top, D = Under. **Your response must end with exactly one letter: A, B, C, or D.**",
         "label": "Scene Graph CoT"
       },
       {
