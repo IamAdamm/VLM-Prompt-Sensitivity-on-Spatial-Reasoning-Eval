@@ -35,6 +35,81 @@ with open(prompts, 'r') as f:
 # Array to store results
 results = []
 
+
+def run_single_inference(image_tensor, image_sizes, prompt_text, max_tokens=128):
+    """Run a single inference and return the answer, confidence, and raw output."""
+    # Build conversation
+    conv = conv_templates["llava_v1"].copy() 
+    conv.append_message(conv.roles[0], DEFAULT_IMAGE_TOKEN + "\n" + prompt_text)
+    conv.append_message(conv.roles[1], None)
+    prompt = conv.get_prompt()
+
+    # Tokenize prompt with image token
+    input_ids = tokenizer_image_token(
+        prompt,
+        tokenizer,
+        IMAGE_TOKEN_INDEX,
+        return_tensors="pt"
+    ).unsqueeze(0).to(device)
+
+    # Generate response with scores for confidence calculation
+    with torch.inference_mode():
+        outputs = model.generate(
+            input_ids,
+            images=image_tensor,
+            image_sizes=image_sizes,
+            max_new_tokens=max_tokens,
+            do_sample=False,
+            use_cache=True,
+            output_scores=True,
+            return_dict_in_generate=True
+        )
+    
+    # Get the generated tokens and scores
+    generated_ids = outputs.sequences
+    scores = outputs.scores
+    
+    # Calculate confidence
+    confidence = None
+    if scores and len(scores) > 0:
+        first_token_logits = scores[0][0]
+        probs = F.softmax(first_token_logits, dim=-1)
+        new_token_start_idx = input_ids.shape[1]
+        if generated_ids.shape[1] > new_token_start_idx:
+            first_generated_token = generated_ids[0, new_token_start_idx]
+            confidence = probs[first_generated_token].item()
+        else:
+            first_generated_token = torch.argmax(probs).item()
+            confidence = probs[first_generated_token].item()
+    
+    answer = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0].strip()
+    
+    return answer, confidence
+
+
+def run_two_step_inference(image_tensor, image_sizes, step1_prompt, step2_prompt):
+    """Run a two-step inference pipeline (Scene Graph CoT style)."""
+    # Step 1: Generate scene graph
+    scene_graph, step1_confidence = run_single_inference(
+        image_tensor, image_sizes, step1_prompt, max_tokens=512
+    )
+    
+    # Step 2: Use scene graph context to generate answer
+    # Combine the scene graph output with step 2 prompt
+    step2_with_context = f"Scene Graph from previous analysis:\n{scene_graph}\n\n{step2_prompt}"
+    
+    final_answer, step2_confidence = run_single_inference(
+        image_tensor, image_sizes, step2_with_context, max_tokens=64
+    )
+    
+    return {
+        'scene_graph': scene_graph,
+        'final_answer': final_answer,
+        'step1_confidence': step1_confidence,
+        'step2_confidence': step2_confidence
+    }
+
+
 # Process each prompt entry
 for entry in prompt_data:
     # Get the list of images and ground truths for this entry
@@ -57,71 +132,49 @@ for entry in prompt_data:
         
         # Process each prompt for the current image
         for prompt_entry in prompts_list:
-            prompt_text = prompt_entry.get('prompt', '') if isinstance(prompt_entry, dict) else prompt_entry
-            prompt_label = prompt_entry.get('label', '') if isinstance(prompt_entry, dict) else ''
+            prompt_label = prompt_entry.get('label', '')
             
-            # Build conversation
-            conv = conv_templates["llava_v1"].copy() 
-            conv.append_message(conv.roles[0], DEFAULT_IMAGE_TOKEN + "\n" + prompt_text)
-            conv.append_message(conv.roles[1], None)
-            prompt = conv.get_prompt()
-
-            # Tokenize prompt with image token
-            input_ids = tokenizer_image_token(
-                prompt,
-                tokenizer,
-                IMAGE_TOKEN_INDEX,
-                return_tensors="pt"
-            ).unsqueeze(0).to(device)
-
-            # Generate response with scores for confidence calculation
-            with torch.inference_mode():
-                outputs = model.generate(
-                    input_ids,
-                    images=image_tensor,
-                    image_sizes=image_sizes,
-                    max_new_tokens=128,
-                    do_sample=False,
-                    use_cache=True,
-                    output_scores=True,
-                    return_dict_in_generate=True
+            # Check if this is a multi-step prompt (Scene Graph CoT)
+            if 'steps' in prompt_entry:
+                # Two-step pipeline
+                steps = prompt_entry['steps']
+                step1_prompt = steps[0]['prompt']
+                step2_prompt = steps[1]['prompt']
+                
+                result = run_two_step_inference(
+                    image_tensor, image_sizes, step1_prompt, step2_prompt
                 )
-            
-            # Get the generated tokens and scores
-            generated_ids = outputs.sequences
-            scores = outputs.scores  # tuple of logits for each generated token
-            
-            # Calculate confidence as the probability of the first generated token
-            # (which should be A, B, C, or D for multiple choice)
-            if scores and len(scores) > 0:
-                first_token_logits = scores[0][0]  # logits for the first generated token
-                probs = F.softmax(first_token_logits, dim=-1)
-                # Get the token that was actually generated (first new token after input)
-                # The scores correspond to the generated tokens, so we use the token ID
-                # from the first position after input_ids
-                new_token_start_idx = input_ids.shape[1]
-                if generated_ids.shape[1] > new_token_start_idx:
-                    first_generated_token = generated_ids[0, new_token_start_idx]
-                    confidence = probs[first_generated_token].item()
-                else:
-                    # If sequences length is less than expected, get the first generated token ID from scores
-                    first_generated_token = torch.argmax(probs).item()
-                    confidence = probs[first_generated_token].item()
+                
+                # Store result with both steps info
+                results.append({
+                    'image': current_image,
+                    'prompt': f"Step 1: {step1_prompt}\n\nStep 2: {step2_prompt}",
+                    'prompt_label': prompt_label,
+                    'scene_graph': result['scene_graph'],
+                    'answer': result['final_answer'],
+                    'confidence': result['step2_confidence'],
+                    'step1_confidence': result['step1_confidence'],
+                    'ground_truth': ground_truth_label,
+                    'timestamp': str(datetime.now())
+                })
             else:
-                confidence = None
-            
-            answer = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0].strip()
-            
-            # Store result
-            results.append({
-                'image': current_image,
-                'prompt': prompt_text,
-                'prompt_label': prompt_label,
-                'answer': answer,
-                'confidence': confidence,
-                'ground_truth': ground_truth_label,
-                'timestamp': str(datetime.now())
-            })
+                # Single-step prompt (Multiple Choice, Chain-of-Thought, Direct Question)
+                prompt_text = prompt_entry.get('prompt', '')
+                
+                answer, confidence = run_single_inference(
+                    image_tensor, image_sizes, prompt_text
+                )
+                
+                # Store result
+                results.append({
+                    'image': current_image,
+                    'prompt': prompt_text,
+                    'prompt_label': prompt_label,
+                    'answer': answer,
+                    'confidence': confidence,
+                    'ground_truth': ground_truth_label,
+                    'timestamp': str(datetime.now())
+                })
 
 # Save results to results.json
 with open(results_file, 'w') as f:

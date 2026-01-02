@@ -12,7 +12,7 @@
     "apple_under_armchair.jpeg": "Under"
     },
     "prompts": [
-        {"prompt": "Where is the apple relative to the armchair? Choose one of the following: A :To the left, B: To the right, C: On top, D: Underneath", "label": "Multiple Choice"},
+        {"prompt": "", "label": "Multiple Choice"},
         {"prompt": "Where is the apple relative to the armchair? Choose one of the following: C: On top, D: Underneath, A: To the left, B: To the right", "label": "Multiple Choice Shuffle"},
         {"prompt": "Where is the apple relative to the armchair? Choose one of the following: A: To the left, B: To the right, C: Above, D: Underneath", "label": "Multiple Choice Vary Above"},
         {"prompt": "Where is the apple relative to the armchair? Choose one of the following: D: Underneath, C: Above, B: To the right, A: To the left", "label": "Multiple Choice Shuffle Vary Above"},

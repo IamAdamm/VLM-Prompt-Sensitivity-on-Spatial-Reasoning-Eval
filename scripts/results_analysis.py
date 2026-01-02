@@ -18,55 +18,66 @@ df = pd.DataFrame(results)
 
 def extract_answer(answer):
     """
-    Extract a single letter answer (A, B, C, or D) from various response formats.
-    Returns the normalized letter or 'INVALID' if no clear answer can be determined.
+    Extract a normalized answer from various response formats.
+    Returns one of: 'Left', 'Right', 'On top', 'Under', or 'INVALID'
     """
     if not answer or not isinstance(answer, str):
         return 'INVALID'
     
     answer = answer.strip()
+    answer_lower = answer.lower()
     
-    # Case 1: Single letter (with optional period)
-    if re.match(r'^[A-D]\.?$', answer):
-        return answer[0]
+    # Case 1: Direct word answers (what we want from Chain-of-Thought style prompts)
+    # Check if answer starts with or equals the target words
+    if answer_lower in ['left', 'right', 'under'] or answer_lower.startswith('left') or answer == 'Left':
+        return 'Left' if 'left' in answer_lower else answer.capitalize()
+    if answer_lower in ['right'] or answer_lower.startswith('right') or answer == 'Right':
+        return 'Right'
+    if answer_lower in ['on top', 'on top.', 'ontop'] or answer_lower.startswith('on top'):
+        return 'On top'
+    if answer_lower in ['under', 'under.'] or answer_lower.startswith('under'):
+        return 'Under'
     
-    # Case 2: Check if the answer ENDS with a letter (possibly with period)
-    # This handles cases like "Based on my analysis... A" or "The answer is B."
-    end_match = re.search(r'[A-D]\.?$', answer)
+    # Case 2: Single letter A/B/C/D (with optional period) - Multiple Choice format
+    if re.match(r'^[A-Da-d]\.?$', answer):
+        letter = answer[0].upper()
+        return {'A': 'Left', 'B': 'Right', 'C': 'On top', 'D': 'Under'}.get(letter, 'INVALID')
+    
+    # Case 3: Check if the answer ENDS with a target word or letter
+    # This handles "...the apple is on the Left" or "...A."
+    end_match = re.search(r'(Left|Right|On top|Under|[A-D])\.?\s*$', answer, re.IGNORECASE)
     if end_match:
-        return end_match.group()[0]
+        found = end_match.group(1)
+        if found.upper() in 'ABCD':
+            return {'A': 'Left', 'B': 'Right', 'C': 'On top', 'D': 'Under'}.get(found.upper(), 'INVALID')
+        return found.capitalize() if found.lower() != 'on top' else 'On top'
     
-    # Case 3: Model repeated the mapping without answering
-    # e.g., "A = Left, B = Right, C = On top, D = Under" or "A, B, C, D"
+    # Case 4: Model repeated the mapping without answering - INVALID
     if re.match(r'^A\s*=\s*Left', answer) or answer == "A, B, C, D":
         return 'INVALID'
-    
-    # Case 4: Check for variations like "A = Left, B = Right, C = Table, D = Floor"
-    # These are also invalid (model confused the mapping)
     if re.match(r'^A\s*=\s*\w+,\s*B\s*=', answer):
         return 'INVALID'
     
-    # Case 5: Long descriptive answer - try to extract spatial relationship
-    # Look for explicit statements about position
-    answer_lower = answer.lower()
+    # Case 5: Just listed objects without answering - INVALID  
+    if re.match(r'^[A-Za-z]+,\s*[A-Za-z]+,\s*[A-Za-z]+', answer) and len(answer) < 100:
+        return 'INVALID'
     
-    # Check for clear positional statements
-    # Priority: look for "is on the left", "to the left of", "left side", etc.
+    # Case 6: Long descriptive answer - try to extract spatial relationship from text
+    # Look for explicit statements about position
     left_patterns = [
-        r'\bon the left\b', r'\bto the left\b', r'\bleft side\b', r'\bleft of\b',
-        r'\bpositioned.*left\b', r'\bplaced.*left\b', r'\blocated.*left\b'
+        r'\bto the left\b', r'\bon the left\b', r'\bleft side\b', r'\bleft of the\b',
+        r'\blocated.*to the left\b', r'\bpositioned.*left\b'
     ]
     right_patterns = [
-        r'\bon the right\b', r'\bto the right\b', r'\bright side\b', r'\bright of\b',
-        r'\bpositioned.*right\b', r'\bplaced.*right\b', r'\blocated.*right\b'
+        r'\bto the right\b', r'\bon the right\b', r'\bright side\b', r'\bright of the\b',
+        r'\blocated.*to the right\b', r'\bpositioned.*right\b'
     ]
     top_patterns = [
-        r'\bon top\b', r'\bon the top\b', r'\babove\b', r'\bresting on\b',
-        r'\bsitting on\b', r'\bplaced on\b', r'\bon the chair\b', r'\bon the table\b',
-        r'\bon the armchair\b', r'\bon the seat\b'
+        r'\bon top of\b', r'\bon the (chair|table|armchair)\b', r'\bresting on\b',
+        r'\bsitting on\b', r'\bplaced on the\b', r'\bon the seat\b'
     ]
     under_patterns = [
-        r'\bunder\b', r'\bunderneath\b', r'\bbeneath\b', r'\bbelow\b'
+        r'\bunder the\b', r'\bunderneath\b', r'\bbeneath\b', r'\bbelow the\b'
     ]
     
     # Count matches for each direction
@@ -76,16 +87,14 @@ def extract_answer(answer):
     under_count = sum(1 for p in under_patterns if re.search(p, answer_lower))
     
     # If one direction clearly dominates, use it
-    counts = {'A': left_count, 'B': right_count, 'C': top_count, 'D': under_count}
+    counts = {'Left': left_count, 'Right': right_count, 'On top': top_count, 'Under': under_count}
     max_count = max(counts.values())
     
     if max_count > 0:
-        # Check if there's a clear winner (no tie)
         winners = [k for k, v in counts.items() if v == max_count]
         if len(winners) == 1:
             return winners[0]
     
-    # If we can't determine, mark as invalid
     return 'INVALID'
 
 # Apply answer extraction
@@ -108,6 +117,20 @@ for prompt_type, count in invalid_by_prompt.items():
     print(f"  {prompt_type}: {count}/{total_for_type} ({count/total_for_type*100:.1f}%)")
 print()
 
+# Show Scene Graph CoT specific info if present
+if 'scene_graph' in df.columns:
+    scene_graph_results = df[df['prompt_label'] == 'Scene Graph CoT']
+    if len(scene_graph_results) > 0:
+        print("Scene Graph CoT Pipeline Info:")
+        print(f"  Total Scene Graph CoT runs: {len(scene_graph_results)}")
+        # Check if scene graphs were generated (non-empty)
+        valid_scene_graphs = scene_graph_results['scene_graph'].apply(lambda x: x is not None and len(str(x)) > 10 if pd.notna(x) else False).sum()
+        print(f"  Valid scene graphs generated: {valid_scene_graphs}/{len(scene_graph_results)}")
+        if 'step1_confidence' in df.columns:
+            avg_step1_conf = scene_graph_results['step1_confidence'].mean()
+            print(f"  Average Step 1 (Scene Graph) confidence: {avg_step1_conf*100:.2f}%")
+        print()
+
 # Check correctness using extracted answer
 def is_correct(row):
     answer = row['extracted_answer']
@@ -116,14 +139,9 @@ def is_correct(row):
     if answer == 'INVALID':
         return False
     
-    correct_mapping = {
-        'Left': 'A',
-        'Right': 'B',
-        'On top': 'C',
-        'Under': 'D'
-    }
-    
-    return answer == correct_mapping.get(gt, None)
+    # Now answers are normalized to 'Left', 'Right', 'On top', 'Under'
+    # Ground truth is also in this format
+    return answer == gt
 
 df['correct'] = df.apply(is_correct, axis=1)
 
